@@ -1,8 +1,7 @@
 import { useState } from "react";
 import Report from "./components/Report";
 import Cards from "./components/Cards";
-
-const DEFAULT_TIMEFRAME = "weekly";
+import { DEFAULT_TIMEFRAME } from "./data/constants";
 
 function App() {
   const [timeframe, setTimeframe] = useState(DEFAULT_TIMEFRAME);

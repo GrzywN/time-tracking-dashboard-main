@@ -5,13 +5,12 @@ import reportData from "../data/data.json";
 export default function Cards(props) {
   const { timeframe } = props;
 
-  let id = 0;
   const CardComponents = reportData.map((e) => {
-    id += 1;
     const { current } = e.timeframes[timeframe];
     const { previous } = e.timeframes[timeframe];
+    const { title } = e;
     return (
-      <Card key={id} title={e.title} current={current} previous={previous} />
+      <Card key={title} title={title} current={current} previous={previous} />
     );
   });
 

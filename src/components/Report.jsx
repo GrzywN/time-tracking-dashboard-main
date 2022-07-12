@@ -1,8 +1,5 @@
 import PropTypes from "prop-types";
-
-const DAILY = "daily";
-const WEEKLY = "weekly";
-const MONTHLY = "monthly";
+import { DAILY, WEEKLY, MONTHLY } from "../data/constants";
 
 export default function Report(props) {
   const { timeframe, onTimeframeChange } = props;
