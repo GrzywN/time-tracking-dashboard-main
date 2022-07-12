@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import { motion } from "framer-motion";
-import { DAILY, WEEKLY, MONTHLY, PHOTO_URL } from "../data/constants";
+import { DAILY, WEEKLY, MONTHLY } from "../data/constants";
 import {
   createOpacityVariants,
   scaleFromTop,
@@ -29,7 +29,7 @@ export default function Report(props) {
         <motion.img
           variants={opacityVariants[0]}
           className="h-auto w-16 rounded-full border-[3px] border-white lg:w-[4.75rem]"
-          src={PHOTO_URL}
+          src="./src/assets/image-jeremy.png"
           alt="Jeremy Robson"
         />
         <div className="">

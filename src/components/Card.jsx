@@ -6,7 +6,6 @@ import {
   scaleFromBottom,
   cardHover,
 } from "../utils/animationVariants";
-import { ELLIPSIS_URL } from "../data/constants";
 
 export default function Card(props) {
   const { title } = props;
@@ -35,7 +34,7 @@ export default function Card(props) {
           <motion.img
             variants={opacityVariants[0]}
             className="h-[0.3125rem] w-[1.3125rem]"
-            src={ELLIPSIS_URL}
+            src="./src/assets/icon-ellipsis.svg"
             alt=""
             width="21"
             height="5"
