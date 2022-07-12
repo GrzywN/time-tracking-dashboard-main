@@ -12,18 +12,18 @@ export default function Card(props) {
 
   return (
     <div
-      className={`${`bg-${styleName}`} bg-no-repeat h-[10rem] rounded-2xl relative`}
+      className={`${`bg-${styleName}`} relative min-h-[10rem] rounded-2xl bg-no-repeat`}
     >
-      <div className="bg-DarkBlue w-full h-[7.625rem] rounded-2xl px-6 py-7 absolute bottom-0 hover:bg-DarkBlueHover hover-transition">
-        <div className="w-full flex items-center justify-between">
+      <div className="hover-transition absolute bottom-0 h-[7.625rem] w-full rounded-2xl bg-DarkBlue px-6 py-7 hover:bg-DarkBlueHover">
+        <div className="flex w-full items-center justify-between">
           <h1 className="text-White">{title}</h1>
           <img
-            className="w-[1.3125rem] h-[0.3125rem]"
+            className="h-[0.3125rem] w-[1.3125rem]"
             src="./src/images/icon-ellipsis.svg"
             alt=""
           />
         </div>
-        <div className="w-full flex items-center justify-between">
+        <div className="flex w-full items-center justify-between">
           <h2 className="text-White">{current}hrs</h2>
           <p className="text-PaleBlue">
             <small>Last week - {previous}hrs</small>

@@ -7,6 +7,7 @@ module.exports = {
     "plugin:react/recommended",
     "airbnb",
     "plugin:prettier/recommended",
+    "plugin:tailwindcss/recommended",
   ],
   parserOptions: {
     ecmaFeatures: {
@@ -15,7 +16,7 @@ module.exports = {
     ecmaVersion: "latest",
     sourceType: "module",
   },
-  plugins: ["react", "prettier"],
+  plugins: ["react", "prettier", "tailwindcss"],
   rules: {
     "prettier/prettier": "error",
     "import/no-extraneous-dependencies": "off",

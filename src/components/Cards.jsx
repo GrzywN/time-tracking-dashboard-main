@@ -9,7 +9,6 @@ export default function Cards() {
     id += 1;
     const { current } = e.timeframes[currentTimeframe];
     const { previous } = e.timeframes[currentTimeframe];
-    console.log(e);
     return (
       <Card key={id} title={e.title} current={current} previous={previous} />
     );

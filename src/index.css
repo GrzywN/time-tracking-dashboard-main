@@ -8,18 +8,12 @@
   @apply transition-colors duration-200 ease-in-out;
 }
 
-
-html {
-  font-family: 'Rubik', sans-serif;
-}
-
 *,
 ::before,
 ::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: inherit;
   /* outline: 1px white dashed; */
 }
 
@@ -30,6 +24,7 @@ html:focus-within {
 body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
+  font-family: 'Rubik', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

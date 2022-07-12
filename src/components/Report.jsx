@@ -1,9 +1,9 @@
 export default function Report() {
   return (
-    <div className=" rounded-2xl relative bg-DarkBlue h-[12.6875rem]">
-      <div className="rounded-2xl w-full h-[8.3125rem] pl-8 pt-[2.1875rem] pb-[2.125rem] pr-10 bg-Blue flex items-center gap-5 absolute">
+    <div className=" relative min-h-[12.6875rem] rounded-2xl bg-DarkBlue">
+      <div className="absolute flex h-[8.3125rem] w-full items-center gap-5 rounded-2xl bg-Blue pl-8 pt-[2.1875rem] pb-[2.125rem] pr-10">
         <img
-          className="w-16 h-auto border-[3px] border-white rounded-full"
+          className="h-auto w-16 rounded-full border-[3px] border-white"
           src="./src/images/image-jeremy.png"
           alt="Jeremy Robson"
         />
@@ -16,26 +16,26 @@ export default function Report() {
       </div>
       <div className="mt-[9.8125rem]">
         <ul className="flex">
-          <li className="text-center w-full">
+          <li className="w-full text-center">
             <button
               type="button"
-              className="text-DesaturatedBlue hover:text-White hover-transition"
+              className="hover-transition text-DesaturatedBlue hover:text-White"
             >
               Daily
             </button>
           </li>
-          <li className="text-center w-full">
+          <li className="w-full text-center">
             <button
               type="button"
-              className="text-DesaturatedBlue hover:text-White hover-transition"
+              className="hover-transition text-DesaturatedBlue hover:text-White"
             >
               Weekly
             </button>
           </li>
-          <li className="text-center w-full">
+          <li className="w-full text-center">
             <button
               type="button"
-              className="text-DesaturatedBlue hover:text-White hover-transition"
+              className="hover-transition text-DesaturatedBlue hover:text-White"
             >
               Monthly
             </button>
