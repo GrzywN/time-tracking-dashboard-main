@@ -1,4 +1,17 @@
-export default function Report() {
+import PropTypes from "prop-types";
+
+const DAILY = "daily";
+const WEEKLY = "weekly";
+const MONTHLY = "monthly";
+
+export default function Report(props) {
+  const { timeframe, onTimeframeChange } = props;
+
+  const clickHandler = (event) => {
+    const newTimeframe = event.target.textContent.toLowerCase();
+    onTimeframeChange(newTimeframe);
+  };
+
   return (
     <div className=" relative min-h-[12.6875rem] rounded-2xl bg-DarkBlue">
       <div className="absolute flex h-[8.3125rem] w-full items-center gap-5 rounded-2xl bg-Blue pl-8 pt-[2.1875rem] pb-[2.125rem] pr-10">
@@ -19,7 +32,10 @@ export default function Report() {
           <li className="w-full text-center">
             <button
               type="button"
-              className="hover-transition text-DesaturatedBlue hover:text-White"
+              className={`hover-transition hover:text-White ${
+                timeframe === DAILY ? "text-White" : "text-DesaturatedBlue"
+              }`}
+              onClick={clickHandler}
             >
               Daily
             </button>
@@ -27,7 +43,10 @@ export default function Report() {
           <li className="w-full text-center">
             <button
               type="button"
-              className="hover-transition text-DesaturatedBlue hover:text-White"
+              className={`hover-transition hover:text-White ${
+                timeframe === WEEKLY ? "text-White" : "text-DesaturatedBlue"
+              }`}
+              onClick={clickHandler}
             >
               Weekly
             </button>
@@ -35,7 +54,10 @@ export default function Report() {
           <li className="w-full text-center">
             <button
               type="button"
-              className="hover-transition text-DesaturatedBlue hover:text-White"
+              className={`hover-transition hover:text-White ${
+                timeframe === MONTHLY ? "text-White" : "text-DesaturatedBlue"
+              }`}
+              onClick={clickHandler}
             >
               Monthly
             </button>
@@ -45,3 +67,8 @@ export default function Report() {
     </div>
   );
 }
+
+Report.propTypes = {
+  timeframe: PropTypes.string.isRequired,
+  onTimeframeChange: PropTypes.func.isRequired,
+};
