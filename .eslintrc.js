@@ -19,5 +19,6 @@ module.exports = {
   rules: {
     "prettier/prettier": "error",
     "import/no-extraneous-dependencies": "off",
+    "react/react-in-jsx-scope": "off",
   },
 };
