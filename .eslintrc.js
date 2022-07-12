@@ -20,5 +20,7 @@ module.exports = {
     "prettier/prettier": "error",
     "import/no-extraneous-dependencies": "off",
     "react/react-in-jsx-scope": "off",
+    // Remove after
+    "react/self-closing-comp": "off",
   },
 };
