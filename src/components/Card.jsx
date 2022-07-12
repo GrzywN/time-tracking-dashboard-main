@@ -34,7 +34,7 @@ export default function Card(props) {
           <motion.img
             variants={opacityVariants[0]}
             className="h-[0.3125rem] w-[1.3125rem]"
-            src="./src/assets/icon-ellipsis.svg"
+            src="./assets/icon-ellipsis.svg"
             alt=""
             width="21"
             height="5"

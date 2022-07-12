@@ -30,12 +30,12 @@ module.exports = {
         SelfCare: extendedColors.SoftOrange,
       },
       backgroundImage: {
-        Work: "url('./src/assets/icon-work.svg')",
-        Play: "url(./src/assets/icon-play.svg)",
-        Study: "url(./src/assets/icon-study.svg)",
-        Exercise: "url(./src/assets/icon-exercise.svg)",
-        Social: "url(./src/assets/icon-social.svg)",
-        SelfCare: "url(./src/assets/icon-self-care.svg)",
+        Work: "url('./assets/icon-work.svg')",
+        Play: "url(./assets/icon-play.svg)",
+        Study: "url(./assets/icon-study.svg)",
+        Exercise: "url(./assets/icon-exercise.svg)",
+        Social: "url(./assets/icon-social.svg)",
+        SelfCare: "url(./assets/icon-self-care.svg)",
       },
       backgroundPosition: {
         Work: "right 1.0925rem top -0.6819rem",
