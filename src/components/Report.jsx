@@ -13,10 +13,10 @@ export default function Report(props) {
   };
 
   return (
-    <div className=" relative min-h-[12.6875rem] rounded-2xl bg-DarkBlue">
-      <div className="absolute flex h-[8.3125rem] w-full items-center gap-5 rounded-2xl bg-Blue pl-8 pt-[2.1875rem] pb-[2.125rem] pr-10">
+    <div className="relative min-h-[12.6875rem] rounded-2xl bg-DarkBlue sm:col-span-2 md:col-span-3 lg:col-span-1 lg:row-span-2 lg:min-h-[32.375rem]">
+      <div className="absolute flex h-[8.3125rem] w-full items-center gap-5 rounded-2xl bg-Blue pl-8 pt-[2.1875rem] pb-[2.125rem] pr-10 lg:h-[22.125rem] lg:flex-col lg:items-start">
         <img
-          className="h-auto w-16 rounded-full border-[3px] border-white"
+          className="h-auto w-16 rounded-full border-[3px] border-white lg:w-[4.75rem]"
           src="./src/images/image-jeremy.png"
           alt="Jeremy Robson"
         />
@@ -27,9 +27,9 @@ export default function Report(props) {
           <h1 className="text-White">Jeremy Robson</h1>
         </div>
       </div>
-      <div className="mt-[9.8125rem]">
-        <ul className="flex">
-          <li className="w-full text-center">
+      <div className="mt-[9.8125rem] lg:mt-[23.75rem]">
+        <ul className="flex lg:ml-8 lg:h-[6.625rem] lg:flex-col lg:justify-between">
+          <li className="w-full text-center lg:text-left">
             <button
               type="button"
               className={`hover-transition hover:text-White ${
@@ -40,7 +40,7 @@ export default function Report(props) {
               Daily
             </button>
           </li>
-          <li className="w-full text-center">
+          <li className="w-full text-center lg:text-left">
             <button
               type="button"
               className={`hover-transition hover:text-White ${
@@ -51,7 +51,7 @@ export default function Report(props) {
               Weekly
             </button>
           </li>
-          <li className="w-full text-center">
+          <li className="w-full text-center lg:text-left">
             <button
               type="button"
               className={`hover-transition hover:text-White ${

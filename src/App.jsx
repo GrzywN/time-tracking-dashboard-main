@@ -2,8 +2,10 @@ import { useState } from "react";
 import Report from "./components/Report";
 import Cards from "./components/Cards";
 
+const DEFAULT_TIMEFRAME = "weekly";
+
 function App() {
-  const [timeframe, setTimeframe] = useState("weekly");
+  const [timeframe, setTimeframe] = useState(DEFAULT_TIMEFRAME);
 
   const timeframeChangeHandler = (newTimeframe) => {
     setTimeframe(newTimeframe);
@@ -11,7 +13,7 @@ function App() {
 
   return (
     <div className="flex min-h-screen items-center justify-center bg-VeryDarkBlue">
-      <main className="mx-6 my-20 flex w-screen flex-col gap-6">
+      <main className="mx-6 my-20 flex w-screen flex-col gap-6 sm:grid sm:grid-cols-2 md:grid-cols-3 lg:max-w-[69.375rem] lg:grid-cols-4">
         <Report
           timeframe={timeframe}
           onTimeframeChange={timeframeChangeHandler}
