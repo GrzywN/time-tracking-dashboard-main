@@ -4,6 +4,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.hover-transition {
+  @apply transition-colors duration-200 ease-in-out;
+}
+
 
 html {
   font-family: 'Rubik', sans-serif;

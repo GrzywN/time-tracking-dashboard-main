@@ -14,7 +14,7 @@ export default function Card(props) {
     <div
       className={`${`bg-${styleName}`} bg-no-repeat h-[10rem] rounded-2xl relative`}
     >
-      <div className="bg-DarkBlue  w-full h-[7.625rem] rounded-2xl px-6 py-7 absolute bottom-0 ">
+      <div className="bg-DarkBlue w-full h-[7.625rem] rounded-2xl px-6 py-7 absolute bottom-0 hover:bg-DarkBlueHover hover-transition">
         <div className="w-full flex items-center justify-between">
           <h1 className="text-White">{title}</h1>
           <img

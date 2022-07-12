@@ -17,17 +17,26 @@ export default function Report() {
       <div className="mt-[9.8125rem]">
         <ul className="flex">
           <li className="text-center w-full">
-            <button type="button" className="text-DesaturatedBlue">
+            <button
+              type="button"
+              className="text-DesaturatedBlue hover:text-White hover-transition"
+            >
               Daily
             </button>
           </li>
           <li className="text-center w-full">
-            <button type="button" className="text-DesaturatedBlue">
+            <button
+              type="button"
+              className="text-DesaturatedBlue hover:text-White hover-transition"
+            >
               Weekly
             </button>
           </li>
           <li className="text-center w-full">
-            <button type="button" className="text-DesaturatedBlue">
+            <button
+              type="button"
+              className="text-DesaturatedBlue hover:text-White hover-transition"
+            >
               Monthly
             </button>
           </li>

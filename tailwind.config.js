@@ -10,6 +10,7 @@ const extendedColors = {
   SoftOrange: "hsl(43, 84%, 65%)",
   VeryDarkBlue: "hsl(226, 43%, 10%)",
   DarkBlue: "hsl(235, 46%, 20%)",
+  DarkBlueHover: "hsl(234,41%,33%)",
   DesaturatedBlue: "hsl(235, 45%, 61%)",
   PaleBlue: "hsl(236, 100%, 87%)",
   White: "hsl(0, 0%, 100%)",
