@@ -29,7 +29,7 @@ export default function Report(props) {
         <motion.img
           variants={opacityVariants[0]}
           className="h-auto w-16 rounded-full border-[3px] border-white lg:w-[4.75rem]"
-          src="./dist/assets/image-jeremy.png"
+          src="./assets/image-jeremy.png"
           alt="Jeremy Robson"
         />
         <div className="">
