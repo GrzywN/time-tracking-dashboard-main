@@ -6,9 +6,7 @@ import {
   scaleFromTop,
 } from "../utils/animationVariants";
 
-export default function Report(props) {
-  const { timeframe, onTimeframeChange } = props;
-
+export default function Report({ timeframe, onTimeframeChange }) {
   const clickHandler = (event) => {
     const newTimeframe = event.target.textContent.toLowerCase();
     onTimeframeChange(newTimeframe);

@@ -7,13 +7,8 @@ import {
   cardHover,
 } from "../utils/animationVariants";
 
-export default function Card(props) {
-  const { title } = props;
-  const { current } = props;
-  const { previous } = props;
-
+export default function Card({ title, current, previous }) {
   const styleName = removeWhiteSpaces(title);
-
   const opacityVariants = createOpacityVariants(3);
 
   return (
