@@ -26,14 +26,15 @@ export default function Card({ title, current, previous }) {
           <motion.p variants={opacityVariants[0]} className="text-White">
             {title}
           </motion.p>
-          <motion.img
-            variants={opacityVariants[0]}
-            className="h-[0.3125rem] w-[1.3125rem]"
-            src="./assets/icon-ellipsis.svg"
-            alt=""
-            width="21"
-            height="5"
-          />
+          <motion.btn variants={opacityVariants[0]} type="button">
+            <img
+              className="h-[0.3125rem] w-[1.3125rem]"
+              src="./assets/icon-ellipsis.svg"
+              alt=""
+              width="21"
+              height="5"
+            />
+          </motion.btn>
         </div>
         <div className="flex w-full items-center justify-between sm:grid">
           <motion.h2 variants={opacityVariants[1]} className="text-White">
